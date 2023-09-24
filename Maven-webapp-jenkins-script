@@ -20,3 +20,10 @@ stages{
     steps{git branch: 'main', credentialsId: '720efe22-3e7d-473b-848f-9c5950c1aba8', url: 'https://github.com/Loki-1/Maven-Webapp.git'
     }
   }
+stage('Build'){
+  steps{
+  sh  "mvn clean package"
+  }
+  }
+
+ 
