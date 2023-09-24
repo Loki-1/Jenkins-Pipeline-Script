@@ -26,4 +26,10 @@ stage('Build'){
   }
   }
 
- 
+ tage('ExecuteSonarQubeReport'){
+  steps{
+  sh  "mvn clean sonar:sonar"
+  }
+  }
+
+
