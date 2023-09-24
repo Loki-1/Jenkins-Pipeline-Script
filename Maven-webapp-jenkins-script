@@ -45,3 +45,20 @@ http://18.117.229.154:8080/')]
   }
   }
 
+post{
+
+ 
+
+success{
+mail bcc: '', body: '''Hi Team,
+
+ 
+
+Jenkins Pipeline success ayyindi ...inka anni musukoni padukondi. Marinni samacharalatho malli kaluddam anthavaraku selavu .
+
+ 
+
+Regards,
+DevOps Team''', cc: 'lokeshnagam160@gmail.com', from: 'lokeshnagam160@gmail.com', replyTo: '', subject: 'Jenkins Pipeline Success', to: 'lokesh.naagam@gmail.com,ratna.gadireddy@gmail.com'
+}
+
