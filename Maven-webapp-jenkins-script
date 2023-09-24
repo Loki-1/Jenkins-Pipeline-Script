@@ -36,4 +36,12 @@ stage('UploadArtifactsIntoNexus'){
   steps{
   sh  "mvn clean deploy"
   }
+  }stage('DeployAppIntoTomcat'){
+  steps{
+  deploy adapters: [tomcat9(credentialsId: '37029e20-9a8b-4ee9-be79-b19475a5f577', path: '', url: '
+http://18.117.229.154:8080/')]
+, contextPath: '/Pipeline', war: '**/*.war'
   }
+  }
+  }
+
