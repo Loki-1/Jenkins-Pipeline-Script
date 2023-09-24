@@ -62,3 +62,18 @@ Regards,
 DevOps Team''', cc: 'lokeshnagam160@gmail.com', from: 'lokeshnagam160@gmail.com', replyTo: '', subject: 'Jenkins Pipeline Success', to: 'lokesh.naagam@gmail.com,ratna.gadireddy@gmail.com'
 }
 
+failure{
+  mail bcc: '', body: '''Hi Team,
+
+ 
+
+Jenkins Pipeline failure ayyindi ...inka nidra legandi . Marinni samacharalatho malli teams lo join avvandi kaluddam anthavaraku selavu .
+
+ 
+
+Regards,
+DevOps Team''', cc: 'lokeshnagam160@gmail.com', from: 'lokeshnagam160@gmail.com', replyTo: '', subject: 'Jenkins Pipeline Failure', to: 'lokesh.naagam@gmail.com,ratna.gadireddy@gmail.com'
+}
+
+} 
+}
