@@ -1,27 +1,21 @@
 pipeline{
 
- 
-
 agent any
 
- 
-
-tools{
+tools
+{
 maven 'Maven3.9.4'
 }
-
- 
-
-stages{
-
- 
-
-  stage('CheckOutCode'){
-    steps{git branch: 'main', credentialsId: '720efe22-3e7d-473b-848f-9c5950c1aba8', url: 'https://github.com/Loki-1/Maven-Webapp.git'
-    }
+stages
+{
+stage('CheckOutCode')
+  {
+    steps{git branch: 'main', credentialsId: '720efe22-3e7d-473b-848f-9c5950c1aba8', url: 'https://github.com/Loki-1/Maven-Webapp.git'}
   }
-stage('Build'){
-  steps{
+stage('Build')
+  {
+  steps
+  {
   sh  "mvn clean package"
   }
   }
