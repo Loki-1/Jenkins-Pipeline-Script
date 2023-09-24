@@ -26,10 +26,14 @@ stage('Build'){
   }
   }
 
- tage('ExecuteSonarQubeReport'){
+ stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn clean sonar:sonar"
   }
   }
 
-
+stage('UploadArtifactsIntoNexus'){
+  steps{
+  sh  "mvn clean deploy"
+  }
+  }
