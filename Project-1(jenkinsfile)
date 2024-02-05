@@ -48,4 +48,13 @@ stage('Image Build for this application') {
         }
 stage('pushing Image into docker-hub') {
             steps {
-                
+  // Build your Docker image
+                script {
+                    // Push the Docker image to the registry
+                    docker.withRegistry('', registryCredential) {
+                        docker.image("${dockerImage}:${IMAGE_TAG}").push()
+                    }
+                }
+            }
+        }
+  
