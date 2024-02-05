@@ -1,1 +1,4 @@
-
+pipeline{
+agent any
+tools
+{
