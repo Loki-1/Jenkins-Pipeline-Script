@@ -46,4 +46,6 @@ stage('Image Build for this application') {
                 }
             }
         }
-
+stage('pushing Image into docker-hub') {
+            steps {
+                
