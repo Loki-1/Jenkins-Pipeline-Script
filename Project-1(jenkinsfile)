@@ -60,3 +60,4 @@ stage('pushing Image into docker-hub') {
 stage('Deploy Application into a container') {
             steps {
                 
+                               
